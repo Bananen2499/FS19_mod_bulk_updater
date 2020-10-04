@@ -9,7 +9,7 @@ Hence this might be better to use for sporadic players who just wants to quickly
 ### Perquisite
 Python3.8+
 ```
-pip install -r .\requirement.txt
+pip install -r .\requirements.txt
 ```
 
 ```
