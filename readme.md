@@ -2,6 +2,7 @@
 Updates all the mods in your mod folder to the latest version. No more updating each mod individually!
 ## Usage
 ### Perquisite
+Python3.8+
 ```
 pip install -r .\requirement.txt
 ```
