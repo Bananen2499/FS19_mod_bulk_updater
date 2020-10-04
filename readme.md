@@ -3,5 +3,5 @@ Updates all the mods in your mod folder to the latest version. No more updating 
 ## Usage
 
 ```
-py ./update_mods.py -f "path to mod folder"
+py ./update_mods.py -f "path to mod-directory"
 ```
