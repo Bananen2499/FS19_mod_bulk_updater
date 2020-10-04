@@ -1,5 +1,10 @@
 # Mod updater for FS19
 Updates all the mods in your mod folder to the latest version. No more updating each mod individually!
+
+This does however not account for mods that break saves on updates, there isn't really a way to manage that as of now.
+Hence this might be better to use for sporadic players who just wants to quickly jump in and plow some fields or cut down a forrest.
+
+(Mods that cant be matched exactly by name and author are left "as is". Shouldn't be many, but you'll have to update those yourself.)
 ## Usage
 ### Perquisite
 Python3.8+
