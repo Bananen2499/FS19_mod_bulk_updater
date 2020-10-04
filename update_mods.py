@@ -12,8 +12,18 @@ import check_n_download
 
 
 if __name__ == "__main__":
-    argparser = argparse.ArgumentParser("mod_updater")
-    argparser.add_argument("-f", "--mod-dir", type=pathlib.Path, required=True)
+    argparser = argparse.ArgumentParser("mod updater",description=
+    """
+    Commandline tool to update mods in FS19.
+    """,epilog=
+    """
+    There is no guarantee that this will work when you use it, please don't be mad.
+    """
+    )
+    argparser.add_argument("-f", "--mod-dir", type=pathlib.Path, required=True,help=
+    """
+    Path to mod-directory (usually "HOME/my games/FarmingSimulator2019/mods/")
+    """)
 
     args = argparser.parse_args()
     mod_path: pathlib.Path = args.mod_dir
