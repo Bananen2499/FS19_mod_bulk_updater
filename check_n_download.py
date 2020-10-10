@@ -59,7 +59,7 @@ def check_mod_and_update(row, mod_dir,outer_bar,chunk_size=2**22):
             if r.ok:
                 mod_path = (mod_dir / row.file_name)
                 with mod_path.open("wb") as fd:
-                    bar = Bar("Download",max = int(r.headers['content-length'])//chunk_size,suffix='%(percent)d%%')
+                    bar = Bar("Download",max = max(int(r.headers['content-length'])//chunk_size,1),suffix='%(percent)d%%')
                     for chunk in r.iter_content(chunk_size=chunk_size):
                         fd.write(chunk)
                         bar.next()

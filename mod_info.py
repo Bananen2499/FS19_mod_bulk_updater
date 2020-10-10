@@ -25,9 +25,10 @@ def parse_page(soup: BeautifulSoup) -> pd.DataFrame:
                      "author": content.p.span.contents[0].replace("By: ", "").strip(),
                      "mod_id": mod_id
                      }
+            res.append(entry)
         # else:
         # skipping dlc, giants plz make api.. or at least be consistent with the links
-        res.append(entry)
+        
     return pd.DataFrame(res)
 
 

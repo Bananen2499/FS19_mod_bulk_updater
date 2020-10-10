@@ -1,8 +1,6 @@
-import requests
+
 import pathlib
 import pandas as pd
-import time
-import random
 import argparse
 
 import mod_info
